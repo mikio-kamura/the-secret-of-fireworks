@@ -25,10 +25,11 @@ const Works = () => (
         renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>We built</div>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &apos;s app
+              <div>
+                <strong>3種の火薬の秘密</strong>
+              </div>
+              <div className="text-base md:text-xl py-4 tracking-tight">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
@@ -39,6 +40,7 @@ const Works = () => (
                 height={1620}
                 alt="Pink Panda"
               />
+              <div>こんな感じでテキストを入れることはできる</div>
             </WorkRight>
           </WorkContainer>
         )}
@@ -48,12 +50,11 @@ const Works = () => (
         renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>We made</div>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://shuheykoyama.com/">
-                  Steakwallet
-                </WorkLink>
-                &nbsp;faster.
+              <div>
+                <strong>炎の色の秘密</strong>
+              </div>
+              <div className="text-base md:text-xl py-4 tracking-tight">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
@@ -64,6 +65,7 @@ const Works = () => (
                 height={1620}
                 alt="Steakwallet"
               />
+              <div>こんな感じでテキストを入れることはできる</div>
             </WorkRight>
           </WorkContainer>
         )}
@@ -73,10 +75,11 @@ const Works = () => (
         renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>We helped</div>
-              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://shuheykoyama.com/">Showtime</WorkLink>
-                &nbsp;ship faster.
+              <div>
+                <strong>まごころの秘密</strong>
+              </div>
+              <div className="text-base md:text-xl py-4 tracking-tight">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
@@ -87,6 +90,7 @@ const Works = () => (
                 height={1620}
                 alt="Showtime"
               />
+              <div>こんな感じでテキストを入れることはできる</div>
             </WorkRight>
           </WorkContainer>
         )}
