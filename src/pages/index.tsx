@@ -8,6 +8,10 @@ import TrustedBy from "@/components/trustedby";
 import ContactUs from "@/components/contactus";
 import Footer from "@/components/footer";
 import useSWR from "swr";
+import SelectMetals, {
+  getSelectedMetalNumbers,
+} from "@/components/select-metals";
+import P5jsContainer from "@/components/p5jsContainer";
 
 const fetcher = (input: any, init?: any) =>
   fetch(input, init).then((res) => res.json());
@@ -23,13 +27,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <P5jsContainer />
       <Masthead />
       {/* <AboutUs /> */}
       <Skills commits={data?.commits} downloads={data?.downloads} />
       <Works />
       {/* <TrustedBy /> */}
       {/* <ContactUs /> */}
-      <Footer />
+      <SelectMetals />
+      {/* <Footer /> */}
     </div>
   );
 };

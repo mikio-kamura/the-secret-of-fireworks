@@ -8,10 +8,7 @@ export const WorkContainer: React.FC = ({ children }) => (
 );
 
 export const WorkBackground: React.FC = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen top-0 sticky">
-    <div className="bg-black h-[30vh] lg:h-auto"></div>
-    <div className="bg-white h-[70vh] lg:min-h-screen"></div>
-  </div>
+  <div className="bg-black grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen top-0 sticky"></div>
 );
 
 export const WorkLeft: React.FC<{ progress: number }> = ({
@@ -39,7 +36,7 @@ export const WorkRight: React.FC<{ progress: number }> = ({
   let translateY = Math.max(-50, -(progress - 0.5) * 50);
   return (
     <div
-      className="flex flex-1 lg:items-center justify-center h-screen"
+      className="bg-black text-white flex flex-1 lg:items-center justify-center h-screen"
       style={{
         transform: `translateY(${translateY}px)`,
       }}
